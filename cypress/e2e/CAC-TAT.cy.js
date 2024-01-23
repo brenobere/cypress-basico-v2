@@ -86,7 +86,7 @@ it('exibe mensagem de erro ao submeter o formulário sem preencher os campos obr
     .should('have.value', 'feedback')
     
   })
-  it.only('marca cada tipo de atendimento', function() {
+  it('marca cada tipo de atendimento', function() {
     cy.get('input[type="radio"]')
       .should('have.length', 3)
       .each(function($radio) {
